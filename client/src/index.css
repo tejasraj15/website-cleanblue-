@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(215, 25%, 27%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(215, 25%, 27%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(215, 25%, 27%);
+  --primary: hsl(207, 100%, 40%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --muted: hsl(210, 40%, 95%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(215, 25%, 27%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(207, 100%, 40%);
+  --radius: 0.75rem;
+  
+  /* Custom CleanBlue colors */
+  --primary-blue: hsl(207, 100%, 40%);
+  --light-blue: hsl(207, 100%, 95%);
+  --accent-teal: hsl(188, 82%, 35%);
+  --deep-gray: hsl(215, 25%, 27%);
+  
+  /* Fonts */
+  --font-inter: 'Inter', sans-serif;
+}
+
+.dark {
+  --background: hsl(215, 25%, 27%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(215, 25%, 27%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(215, 25%, 27%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(207, 100%, 40%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(215, 25%, 20%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(215, 25%, 20%);
+  --muted-foreground: hsl(215, 16%, 65%);
+  --accent: hsl(215, 25%, 20%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(215, 25%, 20%);
+  --input: hsl(215, 25%, 20%);
+  --ring: hsl(207, 100%, 40%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .primary-blue {
+    color: var(--primary-blue);
+  }
+  
+  .bg-primary-blue {
+    background-color: var(--primary-blue);
+  }
+  
+  .light-blue {
+    color: var(--light-blue);
+  }
+  
+  .bg-light-blue {
+    background-color: var(--light-blue);
+  }
+  
+  .accent-teal {
+    color: var(--accent-teal);
+  }
+  
+  .bg-accent-teal {
+    background-color: var(--accent-teal);
+  }
+  
+  .deep-gray {
+    color: var(--deep-gray);
+  }
+  
+  .bg-deep-gray {
+    background-color: var(--deep-gray);
+  }
+}
