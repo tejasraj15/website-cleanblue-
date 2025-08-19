@@ -10,13 +10,13 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-light-blue to-white" data-testid="hero-section">
+    <section id="home" className="pt-16 min-h-screen flex items-center bg-gradient-to-br from-mint-green/20 to-white" data-testid="hero-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-primary-blue">Pure Water.</span><br />
+                <span className="text-navy-dark">Pure Water.</span><br />
                 <span className="text-deep-gray">Advanced Technology.</span><br />
                 <span className="text-accent-teal">Healthier Life.</span>
               </h1>
@@ -29,7 +29,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={() => scrollToSection("products")}
-                className="bg-primary-blue text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                className="bg-accent-teal text-navy-dark px-8 py-4 rounded-xl font-semibold hover:bg-mint-green transition-colors shadow-lg"
                 data-testid="button-shop-now"
               >
                 <ShoppingCart className="mr-2 h-4 w-4" />
@@ -38,7 +38,7 @@ export default function HeroSection() {
               <Button 
                 variant="outline"
                 onClick={() => scrollToSection("technology")}
-                className="border-2 border-primary-blue text-primary-blue px-8 py-4 rounded-xl font-semibold hover:bg-primary-blue hover:text-white transition-colors"
+                className="border-2 border-accent-teal text-accent-teal px-8 py-4 rounded-xl font-semibold hover:bg-accent-teal hover:text-navy-dark transition-colors"
                 data-testid="button-learn-more"
               >
                 <Play className="mr-2 h-4 w-4" />

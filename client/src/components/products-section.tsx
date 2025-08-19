@@ -54,12 +54,12 @@ export default function ProductsSection() {
                   {product.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary-blue" data-testid={`text-product-price-${product.id}`}>
+                  <span className="text-2xl font-bold text-accent-teal" data-testid={`text-product-price-${product.id}`}>
                     {product.price === "0.00" ? "Custom" : `₹${product.price}`}
                   </span>
                   {product.category === "Corporate" ? (
                     <Button 
-                      className="bg-accent-teal text-white hover:bg-teal-700"
+                      className="bg-navy-dark text-white hover:bg-gray-800"
                       data-testid={`button-quote-${product.id}`}
                     >
                       <Phone className="mr-1 h-4 w-4" />
@@ -67,7 +67,7 @@ export default function ProductsSection() {
                     </Button>
                   ) : (
                     <Button 
-                      className="bg-primary-blue text-white hover:bg-blue-700"
+                      className="bg-accent-teal text-navy-dark hover:bg-mint-green"
                       data-testid={`button-add-cart-${product.id}`}
                     >
                       <ShoppingCart className="mr-1 h-4 w-4" />

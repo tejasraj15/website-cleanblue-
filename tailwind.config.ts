@@ -49,6 +49,8 @@ export default {
         'light-blue': "var(--light-blue)",
         'accent-teal': "var(--accent-teal)",
         'deep-gray': "var(--deep-gray)",
+        'navy-dark': "var(--navy-dark)",
+        'mint-green': "var(--mint-green)",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],

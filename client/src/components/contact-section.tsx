@@ -73,7 +73,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-primary-blue" data-testid="contact-section">
+    <section id="contact" className="py-20 bg-navy-dark" data-testid="contact-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white mb-12">
           <h2 className="text-4xl font-bold mb-4" data-testid="text-contact-title">
@@ -134,7 +134,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 disabled={submitMutation.isPending}
-                className="w-full bg-primary-blue text-white hover:bg-blue-700"
+                className="w-full bg-accent-teal text-navy-dark hover:bg-mint-green"
                 data-testid="button-submit-contact"
               >
                 {submitMutation.isPending ? "Sending..." : "Send Message"}
@@ -146,7 +146,7 @@ export default function ContactSection() {
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                className="bg-white text-primary-blue px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors shadow-lg flex-1"
+                className="bg-accent-teal text-navy-dark px-8 py-4 rounded-xl font-semibold hover:bg-mint-green transition-colors shadow-lg flex-1"
                 data-testid="button-call-now"
               >
                 <Phone className="mr-2 h-4 w-4" />
@@ -154,7 +154,7 @@ export default function ContactSection() {
               </Button>
               <Button 
                 variant="outline"
-                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary-blue transition-colors flex-1"
+                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-navy-dark transition-colors flex-1"
                 data-testid="button-free-sample"
               >
                 <Mail className="mr-2 h-4 w-4" />

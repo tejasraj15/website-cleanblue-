@@ -44,11 +44,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2" data-testid="footer-logo">
-              <div className="w-8 h-8 bg-primary-blue rounded-lg flex items-center justify-center">
-                <Droplets className="text-white text-sm" />
+            <div className="flex items-center space-x-3" data-testid="footer-logo">
+              <div className="bg-white px-3 py-1 rounded-lg">
+                <span className="text-navy-dark font-bold text-lg">CLEAN</span>
+                <span className="text-accent-teal font-bold text-lg">BLUE</span>
               </div>
-              <span className="text-xl font-bold">CleanBlue</span>
             </div>
             <p className="text-gray-400" data-testid="text-footer-description">
               Revolutionizing water quality with advanced nanobubble technology for a healthier India.

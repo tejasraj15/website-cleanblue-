@@ -28,7 +28,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center" data-testid={`stat-${index}`}>
-                  <div className="text-3xl font-bold text-primary-blue" data-testid={`text-stat-value-${index}`}>
+                  <div className="text-3xl font-bold text-accent-teal" data-testid={`text-stat-value-${index}`}>
                     {stat.value}
                   </div>
                   <div className="text-gray-600" data-testid={`text-stat-label-${index}`}>
@@ -38,7 +38,7 @@ export default function AboutSection() {
               ))}
             </div>
             
-            <Button className="bg-accent-teal text-white px-8 py-4 rounded-xl font-semibold hover:bg-teal-700 transition-colors shadow-lg" data-testid="button-learn-about-us">
+            <Button className="bg-navy-dark text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-colors shadow-lg" data-testid="button-learn-about-us">
               <ArrowRight className="mr-2 h-4 w-4" />
               Learn More About Us
             </Button>

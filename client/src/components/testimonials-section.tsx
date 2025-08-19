@@ -71,7 +71,7 @@ export default function TestimonialsSection() {
         </div>
         
         <div className="text-center mt-12">
-          <Button className="bg-primary-blue text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg" data-testid="button-more-reviews">
+          <Button className="bg-accent-teal text-navy-dark px-8 py-4 rounded-xl font-semibold hover:bg-mint-green transition-colors shadow-lg" data-testid="button-more-reviews">
             <MessageCircle className="mr-2 h-4 w-4" />
             Read More Reviews
           </Button>

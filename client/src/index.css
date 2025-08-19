@@ -28,8 +28,10 @@
   /* Custom CleanBlue colors */
   --primary-blue: hsl(207, 100%, 40%);
   --light-blue: hsl(207, 100%, 95%);
-  --accent-teal: hsl(188, 82%, 35%);
+  --accent-teal: hsl(172, 54%, 55%);
   --deep-gray: hsl(215, 25%, 27%);
+  --navy-dark: hsl(210, 40%, 15%);
+  --mint-green: hsl(160, 65%, 70%);
   
   /* Fonts */
   --font-inter: 'Inter', sans-serif;
@@ -102,5 +104,21 @@
   
   .bg-deep-gray {
     background-color: var(--deep-gray);
+  }
+  
+  .navy-dark {
+    color: var(--navy-dark);
+  }
+  
+  .bg-navy-dark {
+    background-color: var(--navy-dark);
+  }
+  
+  .mint-green {
+    color: var(--mint-green);
+  }
+  
+  .bg-mint-green {
+    background-color: var(--mint-green);
   }
 }

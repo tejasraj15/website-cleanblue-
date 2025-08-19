@@ -6,19 +6,19 @@ export default function TechnologySection() {
       icon: Microscope,
       title: "Nanobubble Infusion",
       description: "Revolutionary technology that infuses water with stable nanobubbles for enhanced oxygenation and improved cellular hydration.",
-      color: "bg-primary-blue"
+      color: "bg-accent-teal"
     },
     {
       icon: Atom,
       title: "Molecular Enhancement",
       description: "Advanced filtration process that preserves essential minerals while removing impurities at the molecular level.",
-      color: "bg-accent-teal"
+      color: "bg-navy-dark"
     },
     {
       icon: Shield,
       title: "Quality Assurance",
       description: "Rigorous testing and quality control ensures every bottle meets the highest standards of purity and safety.",
-      color: "bg-primary-blue"
+      color: "bg-accent-teal"
     }
   ];
 
