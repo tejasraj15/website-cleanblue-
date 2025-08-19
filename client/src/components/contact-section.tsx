@@ -58,7 +58,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Visit Our Facility",
-      content: "Industrial Area, Gurgaon\nHaryana, India"
+      content: "Industrial Area, Gorakhpur\nUttar Pradesh, India"
     },
     {
       icon: Clock,

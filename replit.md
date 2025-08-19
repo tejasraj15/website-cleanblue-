@@ -2,7 +2,7 @@
 
 ## Overview
 
-CleanBlue is a modern web application for a premium water technology company specializing in nanobubble-infused water products. The platform serves as a comprehensive business website featuring product showcases, technology information, customer testimonials, and contact functionality. Built as a full-stack application, it demonstrates advanced water purification technology through an elegant, responsive user interface while providing backend services for data management and customer interactions.
+CleanBlue is a modern web application for a premium water company based in Gorakhpur, Uttar Pradesh, specializing in fresh well water products. The platform serves as a comprehensive business website featuring product showcases, water sourcing information, customer testimonials, and contact functionality. Built as a full-stack application, it showcases the company's commitment to sourcing pure well water through an elegant, responsive user interface while providing backend services for data management and customer interactions.
 
 ## User Preferences
 
@@ -44,10 +44,17 @@ Preferred communication style: Simple, everyday language.
 - **Performance**: Lazy loading and optimized asset delivery
 
 ### API Structure
-- **Products API**: CRUD operations for water product catalog management
-- **Testimonials API**: Customer review and rating system
-- **Contact API**: Form submission handling with validation
+- **Products API**: CRUD operations for water product catalog management (500ml, 1L, bulk supply)
+- **Testimonials API**: Customer review and rating system featuring local UP customers
+- **Contact API**: Form submission handling with validation for Gorakhpur facility
 - **Error Handling**: Centralized error management with appropriate HTTP status codes
+
+### Company Details
+- **Location**: Gorakhpur, Uttar Pradesh, India
+- **Specialty**: Fresh well water sourcing, filtration, and packaging
+- **Process**: Deep well water extraction → Advanced filtration → Quality testing → Packaging
+- **Target Market**: Families and businesses seeking pure, natural drinking water
+- **Brand Colors**: Navy dark header with mint green/teal accents matching bottle caps
 
 ## External Dependencies
 

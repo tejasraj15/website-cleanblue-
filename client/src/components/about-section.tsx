@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 
 export default function AboutSection() {
   const stats = [
-    { value: "10M+", label: "Bottles Sold" },
-    { value: "50K+", label: "Happy Customers" },
-    { value: "15+", label: "Cities Served" },
-    { value: "99.9%", label: "Purity Level" }
+    { value: "5M+", label: "Bottles Sold" },
+    { value: "25K+", label: "Happy Customers" },
+    { value: "10+", label: "Cities Served" },
+    { value: "100%", label: "Fresh Well Water" }
   ];
 
   return (
@@ -19,9 +19,9 @@ export default function AboutSection() {
                 Our Story
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed" data-testid="text-about-description">
-                Founded with a vision to revolutionize water quality in India, CleanBlue combines cutting-edge technology 
-                with a commitment to health and sustainability. Our journey began with the simple belief that everyone 
-                deserves access to the purest, most beneficial water possible.
+                Born in Gorakhpur, Uttar Pradesh, CleanBlue is rooted in the tradition of pure well water. 
+                Our facility sources water from deep wells, filters it through advanced purification systems, 
+                and packages it with care. We bring the goodness of fresh Gorakhpur water to families across India.
               </p>
             </div>
             

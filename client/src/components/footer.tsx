@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400" data-testid="text-footer-description">
-              Revolutionizing water quality with advanced nanobubble technology for a healthier India.
+              Fresh well water from Gorakhpur, UP - bringing nature's purest hydration to families across India.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {

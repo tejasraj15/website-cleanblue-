@@ -4,20 +4,20 @@ export default function TechnologySection() {
   const technologies = [
     {
       icon: Microscope,
-      title: "Nanobubble Infusion",
-      description: "Revolutionary technology that infuses water with stable nanobubbles for enhanced oxygenation and improved cellular hydration.",
+      title: "Deep Well Sourcing",
+      description: "Our water is sourced from carefully dug deep wells in Gorakhpur, UP, ensuring access to the purest groundwater reserves.",
       color: "bg-accent-teal"
     },
     {
       icon: Atom,
-      title: "Molecular Enhancement",
-      description: "Advanced filtration process that preserves essential minerals while removing impurities at the molecular level.",
+      title: "Advanced Filtration",
+      description: "Multi-stage filtration process removes impurities while preserving natural minerals, delivering fresh, clean drinking water.",
       color: "bg-navy-dark"
     },
     {
       icon: Shield,
-      title: "Quality Assurance",
-      description: "Rigorous testing and quality control ensures every bottle meets the highest standards of purity and safety.",
+      title: "Quality Testing",
+      description: "Every batch undergoes rigorous quality testing and meets all FSSAI and BIS standards for packaged drinking water.",
       color: "bg-accent-teal"
     }
   ];
@@ -27,11 +27,11 @@ export default function TechnologySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-deep-gray mb-4" data-testid="text-technology-title">
-            Advanced Nanobubble Technology
+            Fresh Well Water from Gorakhpur
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="text-technology-description">
-            Our patented nanobubble infusion technology delivers oxygen-rich hydration at the cellular level, 
-            with nanobubbles 2,500 times smaller than a grain of salt.
+            Sourced directly from deep wells in Gorakhpur, UP, our water goes through rigorous filtration and purification 
+            processes to ensure you receive the freshest, cleanest drinking water nature has to offer.
           </p>
         </div>
         

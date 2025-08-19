@@ -21,8 +21,8 @@ export default function HeroSection() {
                 <span className="text-accent-teal">Healthier Life.</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed" data-testid="text-hero-description">
-                Experience India's most advanced water purification technology with CleanBlue. 
-                Our innovative nanobubble-infused water delivers enhanced oxygenation and cellular-level hydration for optimal health and performance.
+                Sourced from the pristine wells of Gorakhpur, Uttar Pradesh, CleanBlue brings you the purest natural water. 
+                Our fresh well water is carefully dug, filtered through advanced purification systems, and packaged to deliver nature's best hydration to your doorstep.
               </p>
             </div>
             
@@ -64,8 +64,8 @@ export default function HeroSection() {
           
           <div className="relative animate-fade-in">
             <img 
-              src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=800" 
-              alt="Premium water bottle with clean design" 
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=800" 
+              alt="CleanBlue water bottle with teal label from Gorakhpur" 
               className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               data-testid="img-hero-product"
             />
@@ -73,8 +73,8 @@ export default function HeroSection() {
               <Award className="text-2xl" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg border">
-              <div className="text-primary-blue font-bold text-lg" data-testid="text-purity-percentage">99.9%</div>
-              <div className="text-sm text-gray-600">Pure Water</div>
+              <div className="text-accent-teal font-bold text-lg" data-testid="text-purity-percentage">100%</div>
+              <div className="text-sm text-gray-600">Fresh Well Water</div>
             </div>
           </div>
         </div>
