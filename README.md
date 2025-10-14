@@ -1,2 +1,2 @@
 # website-cleanblue-
-This is a git repository for the website clean blue where everything will be stored.
+This is a full-stack web application for Clean Blue, a water bottling company. The application features a marketing website showcasing their water products with sections for company information, purification process details, product lineup, payment gateway and customer contact capabilities. The project is built as a monorepo with a React frontend and Express.js backend, designed for scalability and modern web standards.
