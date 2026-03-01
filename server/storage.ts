@@ -15,17 +15,23 @@ export interface IStorage {
   // Contact Submissions
   createContactSubmission(submission: InsertContactSubmission): Promise<ContactSubmission>;
   getContactSubmissions(): Promise<ContactSubmission[]>;
+
+  // Users
+  createUser(email: string, password: string, contact: string): Promise<{ id: string; email: string; contact: string }>;
+  getUserByEmail(email: string): Promise<{ id: string; email: string; password: string; contact: string } | undefined>;
 }
 
 export class MemStorage implements IStorage {
   private products: Map<string, Product>;
   private testimonials: Map<string, Testimonial>;
   private contactSubmissions: Map<string, ContactSubmission>;
+  private users: Map<string, { id: string; email: string; password: string; contact: string }>;
 
   constructor() {
     this.products = new Map();
     this.testimonials = new Map();
     this.contactSubmissions = new Map();
+    this.users = new Map();
     this.seedData();
   }
 
@@ -137,6 +143,17 @@ export class MemStorage implements IStorage {
 
   async getContactSubmissions(): Promise<ContactSubmission[]> {
     return Array.from(this.contactSubmissions.values());
+  }
+
+  async createUser(email: string, password: string, contact: string): Promise<{ id: string; email: string; contact: string }> {
+    const id = randomUUID();
+    const user = { id, email, password, contact };
+    this.users.set(email.toLowerCase(), user);
+    return { id, email, contact };
+  }
+
+  async getUserByEmail(email: string): Promise<{ id: string; email: string; password: string; contact: string } | undefined> {
+    return this.users.get(email.toLowerCase());
   }
 }
 

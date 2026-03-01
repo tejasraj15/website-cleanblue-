@@ -1,12 +1,28 @@
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Phone } from "lucide-react";
+import { ShoppingCart, Phone, Check } from "lucide-react";
+import { useCart } from "@/hooks/use-cart";
+import { useState } from "react";
 import type { Product } from "@shared/schema";
 
 export default function ProductsSection() {
   const { data: products, isLoading } = useQuery<Product[]>({
     queryKey: ["/api/products"],
   });
+  const { addToCart } = useCart();
+  const [addedIds, setAddedIds] = useState<Set<string>>(new Set());
+
+  const handleAddToCart = (product: Product) => {
+    addToCart(product);
+    setAddedIds((prev) => new Set(prev).add(product.id));
+    setTimeout(() => {
+      setAddedIds((prev) => {
+        const next = new Set(prev);
+        next.delete(product.id);
+        return next;
+      });
+    }, 1200);
+  };
 
   if (isLoading) {
     return (
@@ -67,11 +83,17 @@ export default function ProductsSection() {
                     </Button>
                   ) : (
                     <Button 
-                      className="bg-accent-teal text-navy-dark hover:bg-mint-green"
+                      className={addedIds.has(product.id) 
+                        ? "bg-green-500 text-white hover:bg-green-600" 
+                        : "bg-accent-teal text-navy-dark hover:bg-mint-green"}
                       data-testid={`button-add-cart-${product.id}`}
+                      onClick={() => handleAddToCart(product)}
                     >
-                      <ShoppingCart className="mr-1 h-4 w-4" />
-                      Add to Cart
+                      {addedIds.has(product.id) ? (
+                        <><Check className="mr-1 h-4 w-4" /> Added!</>
+                      ) : (
+                        <><ShoppingCart className="mr-1 h-4 w-4" /> Add to Cart</>
+                      )}
                     </Button>
                   )}
                 </div>

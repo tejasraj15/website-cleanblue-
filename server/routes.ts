@@ -51,6 +51,47 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // User registration
+  app.post("/api/auth/register", async (req, res) => {
+    try {
+      const { email, password, contact } = req.body;
+      if (!email || !password || !contact) {
+        return res.status(400).json({ message: "Email, password, and contact are required" });
+      }
+      if (password.length < 8) {
+        return res.status(400).json({ message: "Password must be at least 8 characters" });
+      }
+      const existing = await storage.getUserByEmail(email);
+      if (existing) {
+        return res.status(409).json({ message: "An account with this email already exists. Please login instead." });
+      }
+      const user = await storage.createUser(email, password, contact);
+      res.status(201).json({ message: "Account created successfully", user });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to create account" });
+    }
+  });
+
+  // User login
+  app.post("/api/auth/login", async (req, res) => {
+    try {
+      const { email, password } = req.body;
+      if (!email || !password) {
+        return res.status(400).json({ message: "Email and password are required" });
+      }
+      const user = await storage.getUserByEmail(email);
+      if (!user) {
+        return res.status(404).json({ message: "No account found with this email. Please create a new account." });
+      }
+      if (user.password !== password) {
+        return res.status(401).json({ message: "Incorrect password. Please try again." });
+      }
+      res.json({ message: "Login successful", user: { id: user.id, email: user.email, contact: user.contact } });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to login" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
